@@ -15,9 +15,11 @@ pip install --upgrade pip
 
 ## Install dependencies:
 
-#pip install Flask==2.3.3 
-You can install the latest version of Flask using the following command: 
-pip install -U Flask 
+#pip install Flask==2.3.3
+
+You can install the latest version of Flask using the following command:
+
+pip install -U Flask
 
 ## Run app:
 
