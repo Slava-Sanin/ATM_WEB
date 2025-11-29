@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Withdraw Money</h2>
+  <form method="post">
+    <label><input type="radio" name="option" value="1"> 50</label><br>
+    <label><input type="radio" name="option" value="2"> 100</label><br>
+    <label><input type="radio" name="option" value="3"> 150</label><br>
+    <label><input type="radio" name="option" value="4"> 300</label><br>
+    <label><input type="radio" name="option" value="5"> Other amount</label><br>
+    <div>
+      <input name="other_amount" type="number" placeholder="Enter the amount if you selected 'Other'">
+    </div><br>
+    <button type="submit">Withdraw</button>
+  </form>
+  <p><a href="{{ url_for('menu') }}">Back</a></p>
+{% endblock %}

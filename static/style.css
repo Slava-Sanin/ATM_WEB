@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; max-width:800px; margin:20px auto; padding:0 16px; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+h1 { margin:0; }
+.user-info { font-size:0.9rem; }
+.flashes { list-style:none; padding:0; margin:8px 0; }
+.flashes li { background:#ffd; border:1px solid #f0c; padding:8px; margin-bottom:6px; }
+form label { display:block; margin-bottom:8px; }
+button { padding:8px 12px; cursor:pointer; }
+footer { margin-top:24px; color:#666; font-size:0.9rem; }

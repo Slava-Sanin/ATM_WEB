@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Current Balance</h2>
+  <p>Your balance: <strong>{{ balance }}</strong> NIS</p>
+  <p><a href="{{ url_for('menu') }}">Back</a></p>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>ATM Login</h2>
+  <form method="post">
+    <label>Full name:<br>
+      <input name="name" required placeholder="Avi Cohen">
+    </label><br><br>
+    <label>PIN:<br>
+      <input name="pin" required type="password" maxlength="4" placeholder="4 digits">
+    </label><br><br>
+    <button type="submit">Log in</button>
+  </form>
+  <p>Users (example): Avi Cohen, Yossi Cohen, Yuri Levi</p>
+{% endblock %}

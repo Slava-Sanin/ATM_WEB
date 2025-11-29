@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Welcome, {{ name }}</h2>
+  <p>Balance: {{ balance }} NIS</p>
+  <ul>
+    <li><a href="{{ url_for('deposit') }}">Deposit money</a></li>
+    <li><a href="{{ url_for('withdraw') }}">Withdraw money</a></li>
+    <li><a href="{{ url_for('balance') }}">Check balance</a></li>
+    <li><a href="{{ url_for('change_pin_route') }}">Change PIN</a></li>
+    <li><a href="{{ url_for('receipt') }}">Print receipt</a></li>
+    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+  </ul>
+{% endblock %}

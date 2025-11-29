@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ title if title else "ATM Web" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>ATM Web</h1>
+    {% if session.customer_name %}
+      <div class="user-info">
+        {{ session.customer_name }} |
+        <a href="{{ url_for('menu') }}">Menu</a> |
+        <a href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    {% endif %}
+  </header>
+  <main>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for m in messages %}
+            <li>{{ m }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <small>Simple ATM demo — local</small>
+  </footer>
+</body>
+</html>

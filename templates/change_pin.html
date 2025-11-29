@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Change PIN</h2>
+  <form method="post">
+    <label>New PIN (4 digits):<br>
+      <input name="new_pin" required maxlength="4" pattern="\d{4}">
+    </label><br><br>
+    <button type="submit">Change</button>
+  </form>
+  <p><a href="{{ url_for('menu') }}">Back</a></p>
+{% endblock %}

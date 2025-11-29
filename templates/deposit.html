@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Deposit Money</h2>
+  <form method="post">
+    <label>Amount (multiple of 20, 50, or 100):<br>
+      <input name="amount" required type="number" min="1">
+    </label><br><br>
+    <button type="submit">Deposit</button>
+  </form>
+  <p><a href="{{ url_for('menu') }}">Back</a></p>
+{% endblock %}
