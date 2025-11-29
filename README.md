@@ -1,12 +1,17 @@
 
 ## How to run:
 
-sudo apt install python3.12-venv 
-python3 -m venv myenv 
-source myenv/bin/activate 
-#pip install -r flask_requirements.txt 
-sudo apt install python3-pip 
-pip install --upgrade pip 
+sudo apt install python3.12-venv
+
+python3 -m venv myenv
+
+source myenv/bin/activate
+
+#pip install -r flask_requirements.txt
+
+sudo apt install python3-pip
+
+pip install --upgrade pip
 
 ## Install dependencies:
 
